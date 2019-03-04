@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>First Vue.js</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- la Vue est liée à l'élément html contenant -->
+    <div id="app">
+        <!-- Text -> entre moustaches ou directive v-text -->
+        <h1>{{ message }}</h1>
+        <h2 v-text="subtitle"></h2>
+
+        <!-- HTML -> directive v-html -->
+        <p v-html="description"></p>
+
+        <!-- attribut -> directive v-bind -->
+        Créé par <a v-bind:href="providerUrl" target="_blank">{{ provider }}</a>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+</html>
